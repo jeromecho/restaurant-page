@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "\"restaurant page for menchkin - a noodle shop\" ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyami-kuro/restaurant-page.git"
+  },
+  "author": "\"Jin Cho\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miyami-kuro/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/miyami-kuro/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
