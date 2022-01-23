@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="./main.js"></script>
+    <script src="./main.js" async></script>
     <title>Boilerinos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,131 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@
                     1,100&family=Satisfy&display=swap" rel="stylesheet">
-    <style>
-        html,
-        body {
-            height: 100%
-        }
-
-        body {
-            background-color: rgba(255, 255, 235);
-            display: flex;
-            flex-direction: column;
-        }
-
-        header,
-        main,
-        footer {
-            display: flex;
-        }
-
-        header {
-            align-items: center;
-            flex-direction: column;
-            height: 30%;
-            justify-content: center;
-            width: 100%;
-        }
-
-        nav {
-            display: flex;
-            height: 50%;
-            justify-content: center;
-            width: 50%;
-        }
-
-        nav>a {
-            color: rgb(40, 40, 43);
-            font-size: 2em;
-            margin: 30px;
-            text-decoration: none;
-        }
-
-        nav>a:hover {
-            color: rgba(40, 40, 43, 0.5);
-            transition: 300ms;
-        }
-
-        main {
-            align-items: center;
-            flex-direction: column;
-            height: 60%;
-            justify-content: center;
-            position: relative;
-        }
-
-        #img-caption {
-            font-style: italic;
-        }
-
-        #container {
-            align-items: center;
-            display: flex; 
-            flex-direction: column;
-            height: 80%;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        #container>p {
-            font-size: 1.5em;
-            line-height: 3em;
-        }
-
-        #container>img {
-            max-width: 500px; 
-            width: 70%; 
-        }
-
-        #title {
-            font-family: 'Satisfy';
-            font-size: 7em;
-        }
-
-        #caption {
-            font-family: 'Lato', cursive;
-            font-size: 1.5em;
-        }
-
-        footer {
-            align-items: center;
-            background-color: rgb(160, 82, 45);
-            bottom: 0;
-            height: 10%;
-            justify-content: center;
-            position: absolute;
-            width: 100%;
-            `
-        }
-
-        footer>p {
-            font-size: 1.1em;
-        }
-    </style>
 </head>
-
 <body>
-    <header>
-        <h1 id="title">Boilerinos</h1>
-        <h2 id="caption">Italian style boiled water</h2>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-        </nav>
-    </header>
-    <main>
-        <div id="container">
-            <img src="../src/main-image.jpg" alt="boiling water in cup">
-            <p id="img-caption"> " Warming you up since 1917 " </p>
-            <p> 2921 Milan Street, Fl </p>
-        </div>
-    </main>
-    <footer>
-        <p>Made with ☕ by Jerome Cho</p>
-    </footer>
     <div id="content"></div>
 </body>
 

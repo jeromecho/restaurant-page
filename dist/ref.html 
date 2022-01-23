@@ -1,2 +1,21 @@
 <!-- html --> 
 
+ <header>
+        <h1 id="title">Boilerinos</h1>
+        <h2 id="caption">Italian style boiled water</h2>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <img src="../src/main-image.jpg" alt="boiling water in cup">
+            <p id="img-caption"> " Warming you up since 1917 " </p>
+            <p> 2921 Milan Street, Fl </p>
+        </div>
+    </main>
+    <footer>
+        <p>Made with ☕ by Jerome Cho</p>
+    </footer>
