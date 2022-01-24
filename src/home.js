@@ -1,4 +1,5 @@
 import mainImage from './main-image.jpg';
+import enableTab from './tabs';
 
 const content = document.querySelector("#content");
 
@@ -40,6 +41,10 @@ function makeNav() {
     about.id = "about";
     home.id = "home"; 
     menu.id = "menu"; 
+
+    enableTab(about);
+    enableTab(home);
+    enableTab(menu);
 
     about.textContent= "About"; 
     home.textContent = "Home";

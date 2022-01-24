@@ -1,9 +1,10 @@
 import mainImage from './main-image.jpg';
+import enableTab from './tabs';
 
 const content = document.querySelector("#content");
 
 // appends child elements to page 
-const about = function () { 
+const homePage = function () { 
     const page = document.createElement("div");  
     page.id = "page"; 
 
@@ -41,6 +42,10 @@ function makeNav() {
     home.id = "home"; 
     menu.id = "menu"; 
 
+    enableTab(about);
+    enableTab(home);
+    enableTab(menu);
+
     about.textContent= "About"; 
     home.textContent = "Home";
     menu.textContent = "Menu";
@@ -70,8 +75,9 @@ function makeContainer() {
     img.alt = "boiling water in cup";
     imgCaption.id = "img-caption"; 
 
-    imgCaption.textContent = "Warming you up since 1917";
-    address.textContent = "2921 Milan Street, Fl"; 
+    imgCaption.textContent = "It all started in 1917.";
+    address.textContent = "War was over, but the people were weary \
+    \n we all needed something to warm ourselves up with. ";
 
     container.appendChild(img);
     container.appendChild(imgCaption);
@@ -90,4 +96,4 @@ function makeFooter() {
     return footer; 
 }
 
-export default about; 
+export default homePage; 
