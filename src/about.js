@@ -1,4 +1,4 @@
-import mainImage from './main-image.jpg';
+import mainImage from './assets/ww-one.jpeg';
 import enableTab from './tabs';
 
 const content = document.querySelector("#content");
@@ -69,21 +69,41 @@ function makeContainer() {
 
     const img = document.createElement("img");
     const imgCaption = document.createElement("p");
-    const address = document.createElement("p"); 
 
     img.src = mainImage; 
     img.alt = "boiling water in cup";
     imgCaption.id = "img-caption"; 
 
-    imgCaption.textContent = "It all started in 1917.";
-    address.textContent = "War was over, but the people were weary \
-    \n we all needed something to warm ourselves up with. ";
+    imgCaption.textContent = `"It all started in 1917."`;
 
     container.appendChild(img);
     container.appendChild(imgCaption);
-    container.appendChild(address);
+    // appends story 
+    container.appendChild(makeStory());
 
     return container; 
+}
+
+function makeStory() {
+    const story = document.createElement("div"); 
+    const text = document.createElement("p"); 
+    const sincerely = document.createElement("p"); 
+
+    story.id = "story-container";
+    text.id = "story-text";
+    sincerely.id = "sincerely";
+
+    text.textContent = "The first Boilerinos was set up in 1917, in Milan, Italy. \
+      It was a shop built to warm up the war-weary people who walked into its doors, \
+      and gave comfort to many. Today, we continue on their legacy at our US location\
+      We hope you drop by - we would\
+      love to serve you something warm.";
+    sincerely.textContent = "Sincerely, \n \n the Matizzio Twins"; 
+
+    story.appendChild(text); 
+    story.appendChild(sincerely); 
+
+    return story; 
 }
 
 function makeFooter() {

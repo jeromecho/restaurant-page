@@ -1,0 +1,19 @@
+ 
+ #menu-title {
+     display: none;
+     font-size: 1.8em;
+ }
+
+ #menu-content {
+     border: 2px solid black; 
+     display: grid; 
+     grid-template-rows: auto auto auto;
+     grid-template-columns: auto auto;
+     height: 50vh;
+     width: 80%;
+ }
+
+ .item {
+     font-size: 1.2em;
+     text-align: center;
+ }

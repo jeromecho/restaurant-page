@@ -1,4 +1,3 @@
-import mainImage from './main-image.jpg';
 import enableTab from './tabs';
 
 const content = document.querySelector("#content");
@@ -66,23 +65,50 @@ function makeMain() {
 function makeContainer() {
     const container = document.createElement("div");
     container.id = "container"; 
+    
+    const menuTitle = document.createElement("h3"); 
+    menuTitle.id = "menu-title"; 
 
-    const img = document.createElement("img");
-    const imgCaption = document.createElement("p");
-    const address = document.createElement("p"); 
+    menuTitle.textContent = "Menu"; 
 
-    img.src = mainImage; 
-    img.alt = "boiling water in cup";
-    imgCaption.id = "img-caption"; 
-
-    imgCaption.textContent = "Boiled fresh daily.";
-    address.textContent = "Scrolldown to see more"; 
-
-    container.appendChild(img);
-    container.appendChild(imgCaption);
-    container.appendChild(address);
+    container.appendChild(menuTitle);
+    container.appendChild(makeMenuContent());
 
     return container; 
+}
+
+function makeMenuContent() {
+    const menu = document.createElement("div"); 
+    const currentMenu = ["Classic Boiled Water", 
+    "Parsley Lover", "Frozen Water", "Boiling Water", 
+    "Tomato Delight", "Water"];
+    const menuCaption = ["Italian spring water, ceramic mug", 
+    "Parsely leaves, Italian fountain water, ceramic mug", 
+    "Ice, ceramic mug" ,"Italian fountain water ceramic mug",
+     "Tomatoes, Italian fountain water, ceramic mug", 
+     "Spirytus 96%, hint of Italian fountain water"];  
+    menu.id = "menu-content"; 
+
+    for (let i = 0; i< 6; i++) {
+        let item = document.createElement("div");
+        item.className = "item";
+        item.id = `item-${i}`; 
+
+        let itemContent = document.createElement("p");
+        itemContent.className = "item-content";
+        itemContent.textContent = currentMenu[i];
+        
+        let itemCaption = document.createElement("p");
+        itemCaption.className = "item-caption";
+        itemCaption.textContent = menuCaption[i];
+
+        item.appendChild(itemContent);
+        item.appendChild(itemCaption);
+
+        menu.appendChild(item);
+    }
+
+    return menu;
 }
 
 function makeFooter() {

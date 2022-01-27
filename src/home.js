@@ -1,4 +1,4 @@
-import mainImage from './main-image.jpg';
+import mainImage from './assets/main-image.jpg';
 import enableTab from './tabs';
 
 const content = document.querySelector("#content");
