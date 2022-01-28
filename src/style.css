@@ -32,7 +32,7 @@ header {
 
 nav {
     display: flex;
-    height: 50%;
+    height: 40%;
     justify-content: center;
     width: 50%;
 }
@@ -97,6 +97,11 @@ main {
 #caption {
     font-family: 'Lato', cursive;
     font-size: 1.5em;
+}
+
+#title, #caption {
+    top: 0.2em;
+    position: relative; 
 }
 
 #story-container {
